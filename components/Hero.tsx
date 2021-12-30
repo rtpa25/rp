@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+import { RoughNotation } from 'react-rough-notation';
 
 const Hero = () => {
   return (
@@ -15,20 +15,58 @@ const Hero = () => {
             Ronit Panda.
           </h2>
           <h3 className='mt-4 mb-8 text-4xl font-bold text-blue-500 md:text-6xl '>
-            A person who iterates fast
+            A person who {'      '}{' '}
+            <RoughNotation
+              type={'circle'}
+              show={true}
+              color='blue'
+              animationDuration={2000}>
+              {'  '} iterates fast.{'  '}
+            </RoughNotation>
+            {'  '}
           </h3>
           <div className=''>
             <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
-              I’m a software developer specializing in building full stack web{' '}
+              I’m a software developer specializing in building{'  '}
+              <RoughNotation
+                type={'highlight'}
+                show={true}
+                color='yellow'
+                animationDuration={4000}>
+                full stack web
+              </RoughNotation>{' '}
               apps. Currently, I’m looking for an internship at a seed or
               pre-seed state startup as a Full-Stack developer{'     '}
-              and contribute to teams that are trying to make a difference.
+              and{' '}
+              <RoughNotation
+                type={'highlight'}
+                show={true}
+                color='yellow'
+                animationDuration={4000}>
+                make a difference.
+              </RoughNotation>
             </p>
             <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
-              I’m a software developer specializing in building full stack web{' '}
-              apps. Currently, I’m looking for an internship at a seed or
-              pre-seed state startup as a Full-Stack developer{'     '}
-              and contribute to teams that are trying to make a difference.
+              I tried to start{' '}
+              <RoughNotation
+                type={'highlight'}
+                show={true}
+                color='pink'
+                animationDuration={4000}>
+                my first startup
+              </RoughNotation>
+              {'  '}
+              around 9 months ago, although I was make a pretty good app within
+              a span of a month and got it on playstore but was clueless most of
+              the times. So currently I am looking to be around people who are{' '}
+              <RoughNotation
+                type={'highlight'}
+                show={true}
+                color='pink'
+                animationDuration={4000}>
+                building products
+              </RoughNotation>{' '}
+              that bring a difference
             </p>
           </div>
         </div>
@@ -43,7 +81,6 @@ const Hero = () => {
         </div>
       </div>
       <div className='hidden lg:w-full lg:flex lg:justify-end'>
-        {/* <Image src={profilePic} alt={'Ronit'} className='w-full' /> */}
         <iframe
           src='https://embed.lottiefiles.com/animation/74635'
           width='500px'
