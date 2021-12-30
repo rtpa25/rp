@@ -1,30 +1,34 @@
 /** @format */
 
 import React from 'react';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Hero = () => {
   return (
-    <div className='md:mx-20 md:my-20 flex mx-5 my-40'>
+    <div className='flex mx-5 my-20 md:mx-20'>
       <div className='flex flex-col items-start justify-between'>
         <div>
-          <h1 className='font-mono text-blue-700 ml-2 mb-4 text-lg'>
+          <h1 className='mb-4 ml-2 font-mono text-lg text-blue-700'>
             Hi, my name is
           </h1>
           <h2 className='text-5xl font-extrabold text-transparent md:text-7xl bg-clip-text bg-gradient-to-r from-blue-900 to-blue-500'>
             Ronit Panda.
           </h2>
-          <h3 className='text-4xl md:text-6xl font-bold mt-4 mb-8 text-blue-500 '>
+          <h3 className='mt-4 mb-8 text-4xl font-bold text-blue-500 md:text-6xl '>
             A person who iterates fast
           </h3>
           <div className=''>
-            <p className='mt-4 lg:text-lg text-gray-700 text-lg'>
+            <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
               I’m a software developer specializing in building full stack web{' '}
-              and mobile apps. Currently, I’m actively looking for an internship
-              at a seed or pre-seed state startup as a Full-Stack developer and{' '}
-              <span>
-                contribute to teams that are trying to make a difference
-              </span>
-              .
+              apps. Currently, I’m looking for an internship at a seed or
+              pre-seed state startup as a Full-Stack developer{'     '}
+              and contribute to teams that are trying to make a difference.
+            </p>
+            <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
+              I’m a software developer specializing in building full stack web{' '}
+              apps. Currently, I’m looking for an internship at a seed or
+              pre-seed state startup as a Full-Stack developer{'     '}
+              and contribute to teams that are trying to make a difference.
             </p>
           </div>
         </div>
@@ -38,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className='lg:w-full lg:flex lg:justify-end hidden'>
+      <div className='hidden lg:w-full lg:flex lg:justify-end'>
         {/* <Image src={profilePic} alt={'Ronit'} className='w-full' /> */}
         <iframe
           src='https://embed.lottiefiles.com/animation/74635'
