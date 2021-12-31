@@ -4,8 +4,7 @@ import EtherPhoto from '../public/ether.png';
 import EcommPhoto from '../public/ecomm.png';
 import MedicoPhoto from '../public/medico.png';
 import CodePlayPhoto from '../public/codeplay.png';
-
-import { ProjectProps } from '../components/Project';
+import { ProjectProps } from './interfaces';
 
 export const PROJECTS: ProjectProps[] = [
   {

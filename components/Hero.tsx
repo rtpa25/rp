@@ -5,7 +5,7 @@ import { RoughNotation } from 'react-rough-notation';
 
 const Hero = () => {
   return (
-    <div className='flex mx-5 my-20 md:mx-40'>
+    <div className='flex mx-5 my-20 md:mx-40 ' id='hero'>
       <div className='flex flex-col items-start justify-between'>
         <div>
           <h1 className='mb-4 ml-2 font-mono text-lg text-blue-700'>

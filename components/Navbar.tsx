@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Menu } from '@material-ui/icons';
 import MobileNavigator from './MobileNavigator';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
   const [vis, setVis] = useState<boolean>(false);
@@ -17,7 +18,11 @@ const Navbar = () => {
         rp
       </div>
       <div className='hidden md:flex md:items-center'>
-        <div className='nav-link'>Projects</div>
+        <div className='nav-link'>
+          <Link to='projects' smooth={true} duration={700}>
+            Projects
+          </Link>
+        </div>
         <div className='nav-link'>Tech</div>
         <div className='nav-link'>Contact</div>
         <button className='nav-button'>Resume</button>

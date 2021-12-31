@@ -7,7 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {},
+      backgroundImage: {
+        Ether: './public/ether.png',
+        Ecomm: './public/ecomm.png',
+        Medico: './public/medico.png',
+        CodePlay: './public/codeplay.png',
+      },
     },
   },
   plugins: [],

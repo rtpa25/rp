@@ -1,21 +1,9 @@
 /** @format */
 
 import Image from 'next/image';
+import { ProjectProps } from '../config/interfaces';
 import IconExternal from './icons/ExternalLink';
 import IconGitHub from './icons/Github';
-
-export interface ProjectProps {
-  id: number;
-  title: string;
-  description: string;
-  techStack: {
-    id: number;
-    name: string;
-  }[];
-  externalLink: string;
-  repoLink: string;
-  photo: StaticImageData;
-}
 
 const Project: React.FC<ProjectProps> = ({
   id,
@@ -28,9 +16,9 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   const idIsOdd = id % 2 !== 0;
   return (
-    <div className='flex justify-between my-20'>
+    <div className='flex justify-between my-28'>
       {idIsOdd ? (
-        <div className='flex-1 mx-2 overflow-hidden duration-700 rounded-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
+        <div className='flex-1 mx-2 overflow-hidden duration-700 rounded-lg shadow-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
           <Image src={photo} alt='project image' className='-z-20' />
         </div>
       ) : null}
@@ -56,7 +44,7 @@ const Project: React.FC<ProjectProps> = ({
           }`}>
           {description}
         </div>
-        <ul className='flex max-w-screen-sm'>
+        <ul className='flex  flex-wrap'>
           {techStack.map((tech) => {
             const techIdIsOne = tech.id === 1;
             return (
@@ -82,7 +70,7 @@ const Project: React.FC<ProjectProps> = ({
         </div>
       </div>
       {!idIsOdd ? (
-        <div className='flex-1 mx-2 overflow-hidden duration-700 rounded-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
+        <div className='flex-1 mx-2 overflow-hidden duration-700 rounded-lg shadow-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
           <Image src={photo} alt='project image' className='-z-20' />
         </div>
       ) : null}
