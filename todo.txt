@@ -1,0 +1,5 @@
+1. Figure out the navigation by laying out the sections
+2. Designing the UI of the projects section          
+3. Make it completely dynamic 
+4. Make a branch other than main and deploy the main branch to vercel 
+5. Add the scroll animation 

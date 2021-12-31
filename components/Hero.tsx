@@ -5,7 +5,7 @@ import { RoughNotation } from 'react-rough-notation';
 
 const Hero = () => {
   return (
-    <div className='flex mx-5 my-20 md:mx-20'>
+    <div className='flex mx-5 my-20 md:mx-40'>
       <div className='flex flex-col items-start justify-between'>
         <div>
           <h1 className='mb-4 ml-2 font-mono text-lg text-blue-700'>
@@ -15,15 +15,14 @@ const Hero = () => {
             Ronit Panda.
           </h2>
           <h3 className='mt-4 mb-8 text-4xl font-bold text-blue-500 md:text-6xl '>
-            A person who {'      '}{' '}
+            A person who iterates{' '}
             <RoughNotation
-              type={'circle'}
+              type={'underline'}
               show={true}
               color='blue'
               animationDuration={2000}>
-              {'  '} iterates fast.{'  '}
+              fast.
             </RoughNotation>
-            {'  '}
           </h3>
           <div className=''>
             <p className='mt-4 text-lg text-gray-700 lg:text-lg'>

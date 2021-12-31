@@ -21,11 +21,11 @@ const MobileNavigator: React.FC<ModalProps> = ({ show, onClose }) => {
   };
 
   const modalContent = show ? (
-    <div className='duration-300 ease-in-out absolute top-0 left-0 w-full h-full bg-gray-800/60'>
-      <div className='duration-300 ease-in-out w-9/12 h-full absolute top-0 right-0 z-50 bg-gradient-to-r from-blue-500 to-blue-800'>
+    <div className='absolute top-0 left-0 w-full h-full duration-300 ease-in-out bg-gray-800/60'>
+      <aside className='absolute top-0 right-0 z-50 w-9/12 h-full duration-300 ease-in-out bg-gradient-to-r from-blue-500 to-blue-800'>
         <div>
           <CloseOutlined
-            className='absolute top-0 right-0 mx-4 my-4 scale-150 cursor-pointer text-white'
+            className='absolute top-0 right-0 mx-4 my-4 text-white scale-150 cursor-pointer'
             onClick={handleClose}
           />
         </div>
@@ -43,7 +43,7 @@ const MobileNavigator: React.FC<ModalProps> = ({ show, onClose }) => {
             </button>
           </div>
         </div>
-      </div>
+      </aside>
     </div>
   ) : null;
 

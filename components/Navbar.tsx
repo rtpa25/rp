@@ -3,11 +3,12 @@
 import { useState } from 'react';
 import { Menu } from '@material-ui/icons';
 import MobileNavigator from './MobileNavigator';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const Navbar = () => {
   const [vis, setVis] = useState<boolean>(false);
   return (
-    <div className='flex justify-between mx-5 my-5 md:mx-20'>
+    <div className='flex justify-between mx-5 my-5 md:mx-40'>
       <div
         className='font-mono text-3xl font-bold text-blue-800 cursor-pointer'
         onClick={() => {
@@ -28,6 +29,7 @@ const Navbar = () => {
             className='top-0 right-0 mx-1 my-2 scale-150 cursor-pointer'
             onClick={() => {
               setVis(true);
+              disableBodyScroll(document.querySelector('#modal-root')!);
             }}
           />
         ) : (
@@ -35,6 +37,7 @@ const Navbar = () => {
             show={vis}
             onClose={() => {
               setVis(false);
+              enableBodyScroll(document.querySelector('#modal-root')!);
             }}
           />
         )}
