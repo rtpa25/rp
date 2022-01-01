@@ -18,6 +18,10 @@
   .project-link {
     @apply w-7 h-7 text-blue-800 hover:text-cyan-600 duration-200 m-3
   }
+
+  .socials-link {
+    @apply w-6 h-6 text-blue-800/60 hover:text-blue-800 duration-200 m-10 hover:scale-110  
+  }
   
   .section-heading{
     @apply text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-200 custom-h md:text-5xl
@@ -41,4 +45,12 @@ body{
   height: 1px;
   margin-left: 1rem;
   background-color: #cee0ff;
+}
+.social-line-custom-css-style::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 9rem;
+    margin: 0 auto;
+    background-color: #cee0ff;
 }

@@ -2,8 +2,15 @@
 
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import TechStack from '../components/TechStack';
-import { Hero, Navbar, Projects } from '../components/z(exporter)';
+import {
+  Hero,
+  Navbar,
+  Projects,
+  TechStack,
+  Contact,
+  Footer,
+  Socials,
+} from '../components/z(exporter)';
 import { Fade } from 'react-awesome-reveal';
 
 const Home: NextPage = () => {
@@ -19,11 +26,14 @@ const Home: NextPage = () => {
         />
       </Head>
       <Navbar />
-      <Fade cascade={true} duration={500}>
+      <Fade cascade={true} duration={300}>
         <Hero />
         <Projects />
         <TechStack />
+        <Contact />
       </Fade>
+      <Socials />
+      <Footer />
     </div>
   );
 };

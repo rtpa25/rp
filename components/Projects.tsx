@@ -1,20 +1,18 @@
 /** @format */
 
+import dynamic from 'next/dynamic';
 import { PROJECTS } from '../config/projectData';
-import useWindowDimensions from '../hooks/useWindowDimensions';
 import Project from './Project';
 import ProjectSM from './ProjectSM';
 
 const Projects = () => {
-  const windowDimesnions = useWindowDimensions();
-
   return (
     <div className='mx-5 my-60 md:mx-40' id='projects'>
       <div className=''>
         <h2 className='section-heading'>Some Stuff I’ve Built</h2>
         <ul>
           {PROJECTS.map((project) => {
-            if (windowDimesnions.width! > 750) {
+            if (window.innerWidth! > 750) {
               return (
                 <li key={project.id}>
                   <Project
@@ -50,4 +48,6 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default dynamic(() => Promise.resolve(Projects), {
+  ssr: false,
+});

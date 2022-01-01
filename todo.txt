@@ -1,8 +1,11 @@
 1. Figure out the navigation by laying out the sections
 2. Designing the UI of the projects section          
 3. Make it completely dynamic 
-4. Make a branch other than main and deploy the main branch to vercel 
-5. Add the scroll animation 
+ 5. Add the scroll animation 
 6. Complete the tech section 
 7. complete the contact section and add social links (include peerlist and devfolio if possible)
 8. Add dynamic rendering on scroll package
+9. remove the default scroll bar and add like the one in brittany's portfolio 
+10. Add social icons to the side and make it responsive by rendering at the bottom of the screen on phone screen
+11. Make the mobile navbar work
+12. Make a branch other than main and deploy the main branch to vercel
