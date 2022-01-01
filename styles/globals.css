@@ -53,4 +53,11 @@ body{
     height: 9rem;
     margin: 0 auto;
     background-color: #cee0ff;
+   
+}
+
+.social-line-custom-css-style{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

@@ -33,7 +33,13 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <button className='nav-button'>Resume</button>
+        <a
+          className='nav-button'
+          href='/resume.pdf'
+          target='_blank'
+          rel='noreferrer'>
+          Resume
+        </a>
       </div>
 
       <div className='relative text-blue-800 md:hidden'>
