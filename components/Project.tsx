@@ -39,9 +39,9 @@ const Project: React.FC<ProjectProps> = ({
           `}
         </h2>
         <div
-          className={`z-10 p-6  my-1 ${
-            idIsOdd ? 'text-right pr-0' : 'text-left pl-0'
-          }`}>
+          className={`z-10 py-6 px-4 my-4 ${
+            idIsOdd ? 'text-right' : 'text-left'
+          } bg-slate-200 text-blue-900/95  shadow-lg`}>
           {description}
         </div>
         <ul className='flex  flex-wrap'>
@@ -70,8 +70,12 @@ const Project: React.FC<ProjectProps> = ({
         </div>
       </div>
       {!idIsOdd ? (
-        <div className='flex-1 mx-2 overflow-hidden duration-700 rounded-lg shadow-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
-          <Image src={photo} alt='project image' className='-z-20' />
+        <div className='h-fit flex-1 mx-2 overflow-hidden duration-700 rounded-lg shadow-lg cursor-pointer bg-blue-200/30 hover:bg-transparent'>
+          <Image
+            src={photo}
+            alt='project image'
+            className='-z-20 h-full w-full'
+          />
         </div>
       ) : null}
     </div>
