@@ -12,7 +12,7 @@ const ProjectSM: React.FC<ProjectProps> = ({
   externalLink,
 }) => {
   return (
-    <div className='my-20 bg-blue-300/30 rounded-lg shadow-lg w-full h-full'>
+    <div className='my-20 bg-blue-100/30 rounded-lg shadow-lg w-full h-full'>
       <div className={`flex flex-col  flex-1 p-10 `}>
         <h1 className={`mb-4  font-mono text-lg text-blue-700`}>
           Featured Project

@@ -41,7 +41,7 @@ const Project: React.FC<ProjectProps> = ({
         <div
           className={`z-10 py-6 px-4 my-4 ${
             idIsOdd ? 'text-right' : 'text-left'
-          } bg-slate-200 text-blue-900/95  shadow-lg`}>
+          } bg-blue-100/30 text-blue-900/95  shadow-lg`}>
           {description}
         </div>
         <ul className='flex  flex-wrap'>

@@ -12,3 +12,10 @@ export interface ProjectProps {
   repoLink: string;
   photo: StaticImageData;
 }
+
+export interface TechList {
+  id: number;
+  techName: string;
+  icon: any;
+  proficiency: 'awesome' | 'good' | 'learning';
+}

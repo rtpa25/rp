@@ -3,3 +3,6 @@
 3. Make it completely dynamic 
 4. Make a branch other than main and deploy the main branch to vercel 
 5. Add the scroll animation 
+6. Complete the tech section 
+7. complete the contact section and add social links (include peerlist and devfolio if possible)
+8. Add dynamic rendering on scroll package

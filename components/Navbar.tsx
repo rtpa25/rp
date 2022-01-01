@@ -19,11 +19,15 @@ const Navbar = () => {
       </div>
       <div className='hidden md:flex md:items-center'>
         <div className='nav-link'>
-          <Link to='projects' smooth={true} duration={700}>
+          <Link to='projects' smooth={true} duration={1000}>
             Projects
           </Link>
         </div>
-        <div className='nav-link'>Tech</div>
+        <div className='nav-link'>
+          <Link to='tech' smooth={true} duration={1000}>
+            Tech
+          </Link>
+        </div>
         <div className='nav-link'>Contact</div>
         <button className='nav-button'>Resume</button>
       </div>
