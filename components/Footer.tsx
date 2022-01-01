@@ -1,5 +1,7 @@
 /** @format */
 
+import dynamic from 'next/dynamic';
+import { RoughNotation } from 'react-rough-notation';
 import IconGitHub from './icons/Github';
 import IconLinkedin from './icons/Linkedin';
 import IconTwitter from './icons/Twitter';
@@ -32,11 +34,16 @@ const Footer = () => {
       </ul>
       <p className='font-mono text-xl text-blue-700 cursor-pointer hover:text-cyan-600 duration-300 mb-10'>
         <a target='_blank' rel='noreferrer' href='https://github.com/rtpa25/rp'>
-          Designed and Built by rp
+          Designed and Built by{' '}
+          <RoughNotation show={true} type={'circle'} animationDuration={3000}>
+            RP
+          </RoughNotation>
         </a>
       </p>
     </div>
   );
 };
 
-export default Footer;
+export default dynamic(() => Promise.resolve(Footer), {
+  ssr: false,
+});

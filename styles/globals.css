@@ -7,7 +7,7 @@
     @apply mx-4 cursor-pointer hover:text-blue-700 uppercase font-medium
   }
   .nav-button {
-    @apply mx-4 uppercase font-semibold text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800
+    @apply mx-4 uppercase font-semibold text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800 duration-200
   }
   .mob-nav-lins{
     @apply my-6 text-white cursor-pointer;

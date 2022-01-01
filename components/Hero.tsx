@@ -30,7 +30,7 @@ const Hero = () => {
               <RoughNotation
                 type={'highlight'}
                 show={true}
-                color='yellow'
+                color='rgb(134 239 172)'
                 animationDuration={4000}>
                 full stack web
               </RoughNotation>{' '}
@@ -40,7 +40,7 @@ const Hero = () => {
               <RoughNotation
                 type={'highlight'}
                 show={true}
-                color='yellow'
+                color='rgb(134 239 172)'
                 animationDuration={4000}>
                 make a difference.
               </RoughNotation>

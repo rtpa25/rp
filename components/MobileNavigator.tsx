@@ -3,12 +3,14 @@
 import { CloseOutlined } from '@material-ui/icons';
 import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-scroll';
+import Scroll, { Link } from 'react-scroll';
 
 interface ModalProps {
   show: boolean;
   onClose: () => void;
 }
+
+const scroller = Scroll.scroller;
 
 const MobileNavigator: React.FC<ModalProps> = ({ show, onClose }) => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -19,6 +21,15 @@ const MobileNavigator: React.FC<ModalProps> = ({ show, onClose }) => {
   const handleClose = (e: any) => {
     e.preventDefault();
     onClose();
+  };
+
+  const handleLink = (e: any, containerName: string) => {
+    handleClose(e);
+    console.log(e);
+
+    scroller.scrollTo(containerName, {
+      smooth: true,
+    });
   };
 
   const modalContent = show ? (
@@ -35,21 +46,26 @@ const MobileNavigator: React.FC<ModalProps> = ({ show, onClose }) => {
         <div>
           <div className='flex flex-col items-center justify-center h-screen font-mono text-2xl text-center'>
             <ul>
-              <li className='mob-nav-lins' onClick={handleClose}>
-                <Link to='projects' smooth={true} duration={1000}>
-                  Projects
-                </Link>
+              <li
+                className='mob-nav-lins'
+                onClick={(e) => {
+                  handleLink(e, 'projects');
+                }}>
+                Projects
               </li>
-              <li className='mob-nav-lins' onClick={handleClose}>
-                <Link to='tech' smooth={true} duration={1000}>
-                  Tech
-                </Link>
+              <li
+                className='mob-nav-lins'
+                onClick={(e) => {
+                  handleLink(e, 'tech');
+                }}>
+                Tech
               </li>
-              <li className='mob-nav-lins' onClick={handleClose}>
-                {' '}
-                <Link to='contact' smooth={true} duration={1000}>
-                  Contact
-                </Link>
+              <li
+                className='mob-nav-lins'
+                onClick={(e) => {
+                  handleLink(e, 'contact');
+                }}>
+                Contact
               </li>
             </ul>
             <button className='my-10 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800'>

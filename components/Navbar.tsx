@@ -15,7 +15,7 @@ const Navbar = () => {
         onClick={() => {
           window.location.reload();
         }}>
-        rp
+        RP
       </div>
       <div className='hidden md:flex md:items-center'>
         <div className='nav-link'>
