@@ -10,12 +10,12 @@ const Contact = () => {
     <Element name='contact'>
       <div id='contact' className='mx-5 my-24 md:mx-40'>
         <div className='flex flex-col items-center'>
-          <p className='mt-10  font-mono text-xl text-blue-700'>What’s Next?</p>
-          <h1 className='text-4xl font-bold text-blue-800 mb-6  md:text-6xl'>
+          <p className='mt-10 font-mono text-xl text-blue-700'>What’s Next?</p>
+          <h1 className='mb-6 text-4xl font-bold text-blue-800 md:text-6xl'>
             Get In Touch
           </h1>
-          <p className='max-w-screen-md text-center text-blue-900/95 text-lg md:px-12'>
-            I’m currently looking for an internship at a seed or pre-seed state
+          <p className='max-w-screen-md text-lg text-center text-blue-900/95 md:px-12'>
+            I’m currently looking for an internship at a seed or pre-seed stage
             startup as a software developer and contribute to teams that want to{' '}
             <RoughNotation
               type={'highlight'}

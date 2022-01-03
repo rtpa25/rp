@@ -35,7 +35,7 @@ const Hero = () => {
                 full stack web
               </RoughNotation>{' '}
               apps. Currently, I’m looking for an internship at a seed or
-              pre-seed state startup as a Full-Stack developer{'     '}
+              pre-seed stage startup as a Full-Stack developer{'     '}
               and{' '}
               <RoughNotation
                 type={'highlight'}
