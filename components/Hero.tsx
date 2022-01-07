@@ -1,9 +1,68 @@
 /** @format */
 
-import React from 'react';
-import { RoughNotation } from 'react-rough-notation';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Hero = () => {
+  const fast = (
+    <RoughNotation
+      order={1}
+      type={'underline'}
+      show={true}
+      color='blue'
+      animationDuration={2000}>
+      fast.
+    </RoughNotation>
+  );
+  const full = (
+    <RoughNotation
+      order={2}
+      type={'highlight'}
+      show={true}
+      color='rgb(134 239 172)'
+      animationDuration={4000}>
+      full stack web
+    </RoughNotation>
+  );
+  const difference = (
+    <RoughNotation
+      order={3}
+      type={'highlight'}
+      show={true}
+      color='rgb(134 239 172)'
+      animationDuration={4000}>
+      make a difference.
+    </RoughNotation>
+  );
+  const startup = (
+    <RoughNotation
+      order={4}
+      type={'highlight'}
+      show={true}
+      color='pink'
+      animationDuration={4000}>
+      my first startup
+    </RoughNotation>
+  );
+  const products = (
+    <RoughNotation
+      order={5}
+      type={'highlight'}
+      show={true}
+      color='pink'
+      animationDuration={4000}>
+      building products
+    </RoughNotation>
+  );
+  const order = (
+    <RoughNotationGroup>
+      {fast}
+      {full}
+      {difference}
+      {startup}
+      {products}
+    </RoughNotationGroup>
+  );
+
   return (
     <div className='flex mx-5 my-20 md:mx-40 ' id='hero'>
       <div className='flex flex-col items-start justify-between'>
@@ -15,57 +74,22 @@ const Hero = () => {
             Ronit Panda.
           </h2>
           <h3 className='mt-4 mb-8 text-4xl font-bold text-blue-500 md:text-6xl '>
-            A person who iterates{' '}
-            <RoughNotation
-              type={'underline'}
-              show={true}
-              color='blue'
-              animationDuration={2000}>
-              fast.
-            </RoughNotation>
+            A person who iterates {fast}
           </h3>
           <div className=''>
             <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
               I’m a software developer specializing in building{'  '}
-              <RoughNotation
-                type={'highlight'}
-                show={true}
-                color='rgb(134 239 172)'
-                animationDuration={4000}>
-                full stack web
-              </RoughNotation>{' '}
-              apps. Currently, I’m looking for an internship at a seed or
+              {full} apps. Currently, I’m looking for an internship at a seed or
               pre-seed stage startup as a Full-Stack developer{'     '}
-              and{' '}
-              <RoughNotation
-                type={'highlight'}
-                show={true}
-                color='rgb(134 239 172)'
-                animationDuration={4000}>
-                make a difference.
-              </RoughNotation>
+              and {difference}
             </p>
             <p className='mt-4 text-lg text-gray-700 lg:text-lg'>
-              I tried to start{' '}
-              <RoughNotation
-                type={'highlight'}
-                show={true}
-                color='pink'
-                animationDuration={4000}>
-                my first startup
-              </RoughNotation>
+              I tried to start {startup}
               {'  '}
               around 9 months ago, although I was make a pretty good app within
               a span of a month and got it on playstore but was clueless most of
               the times. So currently I am looking to be around people who are{' '}
-              <RoughNotation
-                type={'highlight'}
-                show={true}
-                color='pink'
-                animationDuration={4000}>
-                building products
-              </RoughNotation>{' '}
-              that bring a difference
+              {products} that bring a difference
             </p>
           </div>
         </div>

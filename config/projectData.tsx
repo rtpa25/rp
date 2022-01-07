@@ -115,8 +115,8 @@ export const PROJECTS: ProjectProps[] = [
         name: 'Typescript',
       },
     ],
-    externalLink: 'https://etherapp.social',
-    repoLink: 'https://github.com/rtpa25/le-redit-web',
+    externalLink: 'https://portfolio-3-frontend.vercel.app',
+    repoLink: 'https://github.com/rtpa25/p-2',
     photo: MedicoPhoto,
   },
   {
@@ -155,8 +155,8 @@ export const PROJECTS: ProjectProps[] = [
         name: 'Rest-API',
       },
     ],
-    externalLink: 'https://etherapp.social',
-    repoLink: 'https://github.com/rtpa25/le-redit-web',
+    externalLink: 'https://new-codep-lay.vercel.app',
+    repoLink: 'https://github.com/rtpa25/newCodepLay',
     photo: CodePlayPhoto,
   },
 ];
